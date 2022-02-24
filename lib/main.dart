@@ -31,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _sum = 0;
 
   Future<void> _calcSum() async {
-    const channel = MethodChannel('oscar.com.br/nativo');
+    const channel = MethodChannel("oscar.com.br/nativo");
 
     try {
       final sum = await channel.invokeMethod('calcSum', {'a': _a, 'b': _b});
